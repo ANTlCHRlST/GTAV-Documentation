@@ -1,0 +1,14 @@
+int PLAYER_PED_ID(int **r3){
+int result;
+    result = *((DWORD*)0x83AAC7E4); 
+
+		if (result) {
+			result = ((int(*)(DWORD))0x82918F28)(**r3);
+			**r3 = result;
+		}
+		else {
+			**r3 = 0;
+		}
+    
+    return result;
+}
